@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sparkqy</title>
+    <meta name="description"
+          content="Sparkqy social networks links"/>
+    <meta name="keywords" content="Sparkqy social networks links"/>
+    <meta name="author" content="Sparkqy"/>
+    <link rel="shortcut icon" href="favicon.ico">
+    <!--Styles-->
+    <link href="https://fonts.googleapis.com/css?family=Barlow:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="css/app.css"/>
+</head>
+<body class="sparkqy-webgl">
+<main>
+    <div class="content">
+        <canvas class="scene scene--full" id="scene"></canvas>
+        <div class="content__inner">
+            <h2 class="content__title">Sparkqy.</h2>
+            <h3 class="content__subtitle"></h3>
+            <div class="row social-links">
+                <a href="https://github.com/Sparkqy" target="_blank" title="GitHub" class="social-link">
+                    <img src="img/icons/github.svg" alt="GitHub" class="icon">
+                </a>
+                <a href="https://www.facebook.com/sparkqy" target="_blank" title="Facebook" class="social-link">
+                    <img src="img/icons/facebook.svg" alt="Facebook" class="icon">
+                </a>
+                <a href="https://t.me/sparkqy" target="_blank" title="Telegram" class="social-link">
+                    <img src="img/icons/telegram.svg" alt="Telegram" class="icon">
+                </a>
+                <a href="https://twitter.com/sparkqy" target="_blank" title="Twitter" class="social-link">
+                    <img src="img/icons/twitter.svg" alt="Twitter" class="icon">
+                </a>
+                <a href="https://www.instagram.com/qqhheeyy/" target="_blank" title="Instagram" class="social-link">
+                    <img src="img/icons/instagram.svg" alt="Instagram" class="icon">
+                </a>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!--Scripts -->
+<script>
+    document.documentElement.className = "js";
+    let supportsCssVars = () => {
+        let e, t = document.createElement("style");
+        return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e
+    };
+    supportsCssVars() || alert("Please view this page in a modern browser that supports CSS Variables.");
+</script>
+<script src="js/base.js"></script>
+<script src="js/three.min.js"></script>
+<script src="js/perlin.js"></script>
+<script src="js/TweenMax.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
